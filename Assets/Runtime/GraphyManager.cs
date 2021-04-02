@@ -49,7 +49,8 @@ namespace Tayx.Graphy
             FPS             = 0,
             RAM             = 1,
             AUDIO           = 2,
-            ADVANCED        = 3
+            NETWORK         = 3,
+            ADVANCED        = 4
         }
 
         public enum ModuleState
@@ -166,6 +167,10 @@ namespace Tayx.Graphy
         [Range(1, 200)]
         [SerializeField] private    int                     m_ramTextUpdateRate                 = 3;  // 3 updates per sec.
 
+        // Network -----------------------------------------------------------------------
+
+        [SerializeField] private Color m_bytesInColor = new Color32(88, 19, 102, 255); // purple
+
         // Audio -------------------------------------------------------------------------
 
         [SerializeField] private    ModuleState             m_audioModuleState                  = ModuleState.FULL;
@@ -258,6 +263,9 @@ namespace Tayx.Graphy
                                                           set { m_cautionFpsColor = value; m_fpsManager.UpdateParameters(); } }
         public Color CriticalFPSColor                   { get { return m_criticalFpsColor; } 
                                                           set { m_criticalFpsColor = value; m_fpsManager.UpdateParameters(); } }
+
+        public Color BytesInColor                       { get { return m_bytesInColor; }
+                                                          set { m_bytesInColor = value; } }
 
         public int GoodFPSThreshold                     { get { return m_goodFpsThreshold; } 
                                                           set { m_goodFpsThreshold = value; m_fpsManager.UpdateParameters(); } }

@@ -72,6 +72,7 @@ namespace Tayx.Graphy
         public Color        GoodColor                   = Color.white;
         public Color        CautionColor                = Color.white;
         public Color        CriticalColor               = Color.white;
+        public Color        BytesInColor                = Color.white;
 
         private int         goodColorPropertyId         = 0;
         private int         cautionColorPropertyId      = 0;

@@ -23,10 +23,6 @@ namespace Tayx.Graphy.Network
 
         #region Methods -> Unity Callbacks
 
-        private void Update()
-        {
-        }
-
         #endregion
     }
 }

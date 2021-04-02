@@ -1,0 +1,229 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E7EE9D45-CBA4-45F6-8E44-4F85BA8DBBFA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Graphy</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Changelog.txt" />
+    <Content Include="Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
+    <Content Include="Font\Roboto\LICENSE.txt" />
+    <Content Include="Textures\2x2_Texture.png" />
+    <Content Include="Textures\Debugger_Logo_Dark.png" />
+    <Content Include="Textures\Debugger_Logo_White.png" />
+    <Content Include="Textures\Manager_Logo_Dark.png" />
+    <Content Include="Textures\Manager_Logo_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".github\FUNDING.yml" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\da_sr_3055_bytes_in" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\da_sr_3055_bytes_in" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\12\44bd8b56f28e514313d84d3e13c37fa632709c" />
+    <None Include=".git\objects\15\f99e16ef9f8c5719ec0619a6b00e61ee2f9b9b" />
+    <None Include=".git\objects\27\922cc66bbc67847c23f73824307b7840fa7c99" />
+    <None Include=".git\objects\50\2ef015fe0312999238c2ce04ae3f2111a5ead7" />
+    <None Include=".git\objects\82\16973978de49492fdf3e7e115d508e8d0bad6f" />
+    <None Include=".git\objects\pack\pack-b5439f433180ccd7b0a47487e01311fd5814150c.idx" />
+    <None Include=".git\objects\pack\pack-b5439f433180ccd7b0a47487e01311fd5814150c.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\da_sr_3055_bytes_in" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\da_sr_3055_bytes_in" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\graphy\v16\.suo" />
+    <None Include=".vs\graphy\v16\Browse.VC.db" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="Changelog.txt.meta" />
+    <None Include="Editor.meta" />
+    <None Include="Editor\GraphyDebuggerEditor.cs.meta" />
+    <None Include="Editor\GraphyEditorStyle.cs.meta" />
+    <None Include="Editor\GraphyManagerEditor.cs.meta" />
+    <None Include="Editor\GraphyMenuItem.cs.meta" />
+    <None Include="Editor\Tayx.Graphy.Editor.asmdef" />
+    <None Include="Editor\Tayx.Graphy.Editor.asmdef.meta" />
+    <None Include="Font.meta" />
+    <None Include="Font\Northwest-Bold.meta" />
+    <None Include="Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt.meta" />
+    <None Include="Font\Northwest-Bold\NORTHWEST-B.otf" />
+    <None Include="Font\Northwest-Bold\NORTHWEST-B.otf.meta" />
+    <None Include="Font\Roboto.meta" />
+    <None Include="Font\Roboto\LICENSE.txt.meta" />
+    <None Include="Font\Roboto\Roboto-Bold.ttf" />
+    <None Include="Font\Roboto\Roboto-Bold.ttf.meta" />
+    <None Include="Font\Roboto\Roboto-Regular.ttf" />
+    <None Include="Font\Roboto\Roboto-Regular.ttf.meta" />
+    <None Include="Graphy_CustomizationScene.unitypackage" />
+    <None Include="Graphy_CustomizationScene.unitypackage.meta" />
+    <None Include="GUI.meta" />
+    <None Include="GUI\GraphyGUISkin.guiskin" />
+    <None Include="GUI\GraphyGUISkin.guiskin.meta" />
+    <None Include="LICENSE.meta" />
+    <None Include="Materials.meta" />
+    <None Include="Materials\Audio_Spectrum_Graph.mat" />
+    <None Include="Materials\Audio_Spectrum_Graph.mat.meta" />
+    <None Include="Materials\Audio_Spectrum_Highest_Values_Graph.mat" />
+    <None Include="Materials\Audio_Spectrum_Highest_Values_Graph.mat.meta" />
+    <None Include="Materials\FPS_Graph.mat" />
+    <None Include="Materials\FPS_Graph.mat.meta" />
+    <None Include="Materials\RAM_Allocated_Graph.mat" />
+    <None Include="Materials\RAM_Allocated_Graph.mat.meta" />
+    <None Include="Materials\RAM_Mono_Graph.mat" />
+    <None Include="Materials\RAM_Mono_Graph.mat.meta" />
+    <None Include="Materials\RAM_Reserved_Graph.mat" />
+    <None Include="Materials\RAM_Reserved_Graph.mat.meta" />
+    <None Include="package.json" />
+    <None Include="package.json.meta" />
+    <None Include="Prefab.meta" />
+    <None Include="Prefab\[Graphy].prefab" />
+    <None Include="Prefab\[Graphy].prefab.meta" />
+    <None Include="Readme! - Graphy - Documentation.pdf" />
+    <None Include="Readme! - Graphy - Documentation.pdf.meta" />
+    <None Include="README.md" />
+    <None Include="README.md.meta" />
+    <None Include="Runtime.meta" />
+    <None Include="Runtime\Advanced.meta" />
+    <None Include="Runtime\Advanced\G_AdvancedData.cs.meta" />
+    <None Include="Runtime\Audio.meta" />
+    <None Include="Runtime\Audio\G_AudioGraph.cs.meta" />
+    <None Include="Runtime\Audio\G_AudioManager.cs.meta" />
+    <None Include="Runtime\Audio\G_AudioMonitor.cs.meta" />
+    <None Include="Runtime\Audio\G_AudioText.cs.meta" />
+    <None Include="Runtime\Fps.meta" />
+    <None Include="Runtime\Fps\G_FpsGraph.cs.meta" />
+    <None Include="Runtime\Fps\G_FpsManager.cs.meta" />
+    <None Include="Runtime\Fps\G_FpsMonitor.cs.meta" />
+    <None Include="Runtime\Fps\G_FpsText.cs.meta" />
+    <None Include="Runtime\Graph.meta" />
+    <None Include="Runtime\GraphyDebugger.cs.meta" />
+    <None Include="Runtime\GraphyManager.cs.meta" />
+    <None Include="Runtime\Graph\G_Graph.cs.meta" />
+    <None Include="Runtime\Ram.meta" />
+    <None Include="Runtime\Ram\G_RamGraph.cs.meta" />
+    <None Include="Runtime\Ram\G_RamManager.cs.meta" />
+    <None Include="Runtime\Ram\G_RamMonitor.cs.meta" />
+    <None Include="Runtime\Ram\G_RamText.cs.meta" />
+    <None Include="Runtime\Shader.meta" />
+    <None Include="Runtime\Shader\G_GraphShader.cs.meta" />
+    <None Include="Runtime\Tayx.Graphy.asmdef" />
+    <None Include="Runtime\Tayx.Graphy.asmdef.meta" />
+    <None Include="Runtime\UI.meta" />
+    <None Include="Runtime\UI\IModifiableState.cs.meta" />
+    <None Include="Runtime\UI\IMovable.cs.meta" />
+    <None Include="Runtime\Util.meta" />
+    <None Include="Runtime\Util\G_ExtensionMethods.cs.meta" />
+    <None Include="Runtime\Util\G_FloatString.cs.meta" />
+    <None Include="Runtime\Util\G_Intstring.cs.meta" />
+    <None Include="Runtime\Util\G_Singleton.cs.meta" />
+    <None Include="Shaders.meta" />
+    <None Include="Shaders\GraphMobile.shader" />
+    <None Include="Shaders\GraphMobile.shader.meta" />
+    <None Include="Shaders\GraphStandard.shader" />
+    <None Include="Shaders\GraphStandard.shader.meta" />
+    <None Include="Textures.meta" />
+    <None Include="Textures\2x2_Texture.png.meta" />
+    <None Include="Textures\Debugger_Logo_Dark.png.meta" />
+    <None Include="Textures\Debugger_Logo_White.png.meta" />
+    <None Include="Textures\Manager_Logo_Dark.png.meta" />
+    <None Include="Textures\Manager_Logo_White.png.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\GraphyDebuggerEditor.cs" />
+    <Compile Include="Editor\GraphyEditorStyle.cs" />
+    <Compile Include="Editor\GraphyManagerEditor.cs" />
+    <Compile Include="Editor\GraphyMenuItem.cs" />
+    <Compile Include="Runtime\Advanced\G_AdvancedData.cs" />
+    <Compile Include="Runtime\Audio\G_AudioGraph.cs" />
+    <Compile Include="Runtime\Audio\G_AudioManager.cs" />
+    <Compile Include="Runtime\Audio\G_AudioMonitor.cs" />
+    <Compile Include="Runtime\Audio\G_AudioText.cs" />
+    <Compile Include="Runtime\Fps\G_FpsGraph.cs" />
+    <Compile Include="Runtime\Fps\G_FpsManager.cs" />
+    <Compile Include="Runtime\Fps\G_FpsMonitor.cs" />
+    <Compile Include="Runtime\Fps\G_FpsText.cs" />
+    <Compile Include="Runtime\GraphyDebugger.cs" />
+    <Compile Include="Runtime\GraphyManager.cs" />
+    <Compile Include="Runtime\Graph\G_Graph.cs" />
+    <Compile Include="Runtime\Network\G_NetworkGraph.cs" />
+    <Compile Include="Runtime\Network\G_NetworkMonitor.cs" />
+    <Compile Include="Runtime\Ram\G_RamGraph.cs" />
+    <Compile Include="Runtime\Ram\G_RamManager.cs" />
+    <Compile Include="Runtime\Ram\G_RamMonitor.cs" />
+    <Compile Include="Runtime\Ram\G_RamText.cs" />
+    <Compile Include="Runtime\Shader\G_GraphShader.cs" />
+    <Compile Include="Runtime\UI\IModifiableState.cs" />
+    <Compile Include="Runtime\UI\IMovable.cs" />
+    <Compile Include="Runtime\Util\G_ExtensionMethods.cs" />
+    <Compile Include="Runtime\Util\G_FloatString.cs" />
+    <Compile Include="Runtime\Util\G_Intstring.cs" />
+    <Compile Include="Runtime\Util\G_Singleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
